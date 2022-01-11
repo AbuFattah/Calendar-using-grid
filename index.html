@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 430px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+      }
+      .calendar-top {
+        align-self: stretch;
+      }
+
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 60px);
+        grid-auto-rows: 60px;
+        /* gap: 5px; */
+        background-color: aliceblue;
+        padding: 5px;
+      }
+
+      .calendar-cell {
+        /* height: 50px;
+        width: 50px; */
+        background-color: aliceblue;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        cursor: default;
+        /* transition: 0.2s ease-in; */
+      }
+      .calendar-cell:hover {
+        background-color: #9cc9f031;
+      }
+      #day {
+        /* background-color: rgb(12, 129, 90); */
+        font-weight: bold;
+        color: darkslategray;
+      }
+      #day:hover {
+        background-color: aliceblue;
+      }
+
+      .other-days {
+        color: #808080be;
+      }
+
+      .calendar-top {
+        display: flex;
+        justify-content: space-between;
+        background-color: orange;
+        padding-left: 10px;
+      }
+      .calendar-top p.date {
+        background-color: yellow;
+        padding: 8px 5px;
+        border-radius: 2px;
+        flex-basis: 200px;
+      }
+      .calendar-top span {
+        flex-basis: 100px;
+        display: flex;
+        background-color: blue;
+        justify-content: space-evenly;
+        align-items: center;
+        /* justify-content: space-evenly; */
+      }
+
+      .calendar-top span p {
+        flex-basis: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h1>Calendar using Grid</h1> -->
+      <div class="calendar-top">
+        <p class="date">January 2022</p>
+        <span>
+          <p>.</p>
+          <p>.</p>
+        </span>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-cell" id="day">Su</div>
+        <div class="calendar-cell" id="day">Mo</div>
+        <div class="calendar-cell" id="day">Tu</div>
+        <div class="calendar-cell" id="day">We</div>
+        <div class="calendar-cell" id="day">Thu</div>
+        <div class="calendar-cell" id="day">Fri</div>
+        <div class="calendar-cell" id="day">Sat</div>
+        <div class="other-days calendar-cell">30</div>
+        <div class="other-days calendar-cell">31</div>
+        <div class="calendar-cell">1</div>
+        <div class="calendar-cell">2</div>
+        <div class="calendar-cell">3</div>
+        <div class="calendar-cell">4</div>
+        <div class="calendar-cell">5</div>
+        <div class="calendar-cell">6</div>
+        <div class="calendar-cell">7</div>
+        <div class="calendar-cell">8</div>
+        <div class="calendar-cell">9</div>
+        <div class="calendar-cell">10</div>
+        <div class="calendar-cell">11</div>
+        <div class="calendar-cell">12</div>
+        <div class="calendar-cell">13</div>
+        <div class="calendar-cell">14</div>
+        <div class="calendar-cell">15</div>
+        <div class="calendar-cell">16</div>
+        <div class="calendar-cell">17</div>
+        <div class="calendar-cell">18</div>
+        <div class="calendar-cell">19</div>
+        <div class="calendar-cell">20</div>
+        <div class="calendar-cell">21</div>
+        <div class="calendar-cell">22</div>
+        <div class="calendar-cell">23</div>
+        <div class="calendar-cell">24</div>
+        <div class="calendar-cell">25</div>
+        <div class="calendar-cell">26</div>
+        <div class="calendar-cell">27</div>
+        <div class="calendar-cell">28</div>
+        <div class="calendar-cell">29</div>
+        <div class="calendar-cell">30</div>
+        <div class="calendar-cell">31</div>
+        <div class="other-days calendar-cell">1</div>
+        <div class="other-days calendar-cell">2</div>
+        <div class="other-days calendar-cell">3</div>
+        <div class="other-days calendar-cell">4</div>
+        <div class="other-days calendar-cell">5</div>
+        <div class="other-days calendar-cell">6</div>
+        <div class="other-days calendar-cell">7</div>
+        <div class="other-days calendar-cell">8</div>
+        <div class="other-days calendar-cell">9</div>
+      </div>
+    </div>
+  </body>
+</html>
